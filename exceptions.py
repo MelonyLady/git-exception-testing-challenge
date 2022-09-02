@@ -24,65 +24,78 @@
 
 # AttributeError - EXAMPLE
 def produce_attribute_error():
-    # print(1.234.upper())
-    pass
+    print(1.234.upper())
+
 
 
 # KeyError
 def produce_key_error():
-    pass
+    dictionary = {'pea': 5, 'pod': 7, 'china': 10}
+    print(dictionary['doll'])
+
 
 
 # IndexError
 def produce_index_error():
-    pass
+    list = ['these', 'are', 'things', 'in', 'a', 'list']
+    print(list[9])
 
 
 # NameError
 def produce_name_error():
-    pass
+    print(fakenews)
 
 
 # UnboundLocalError
+name = 'alice'
 def produce_unbound_local_error():
-    pass
+    print(name)
+
+    name = 'bob'
 
 
 # TypeError
 def produce_type_error():
-    pass
+    print('string'/ 9)
 
 
 # ValueError
 def produce_value_error():
-    pass
+    import math
+    print(math.sqrt(-1))
 
 
 # ZeroDivisionError
 def produce_zero_division_error():
-    pass
+    print(9 / 0)
+
 
 
 # OverflowError
 def produce_overflow_error():
-    pass
+    import math
+    print(math.exp(1000))
 
 
 # FileNotFoundError
 def produce_file_not_found_error():
-    pass
+    open('narnia', 'r')
 
 
 # UnicodeEncodeError
 def produce_unicode_encode_error():
-    pass
+    a = u'café'
+    b = a.encode('utf8')
+    r = str(b)
+    print("The unicode string after fixing the UnicodeEncodeError is as follows:")
+    print(r)
 
 
 # ModuleNotFoundError
 def produce_module_not_found_error():
-    pass
+    import pndas
 
 
 # ImportError
 def produce_import_error():
-    pass
+    import rndom
